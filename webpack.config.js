@@ -6,7 +6,8 @@ module.exports = {
   entry: path.join(__dirname, 'src', 'index.js'),
   devServer: {
     hot: true,
-    open: true
+    open: true,
+    historyApiFallback: true
   },
   module: {
     rules: [
@@ -35,6 +36,12 @@ module.exports = {
     ]
   },
   resolve: {
+    alias: {
+      Pages: path.resolve(__dirname, 'src/pages'),
+      Components: path.resolve(__dirname, 'src/components'),
+      Utils: path.resolve(__dirname, 'src/utils'),
+      BestPractices: path.resolve(__dirname, 'src/best-practices')
+    },
     extensions: ['.js', '.jsx', '.css']
   },
   plugins: [
