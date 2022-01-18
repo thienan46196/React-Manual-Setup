@@ -11,7 +11,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.?js$/,
+        test: /\.?js|.?jsx$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -19,7 +19,7 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
-      },
+      }, // config loader for both JS and JSX
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader']
@@ -33,6 +33,9 @@ module.exports = {
         use: ['@svg/webpack']
       } //config for SVG as react component
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css']
   },
   plugins: [
     new HtmlWebpackPlugin({

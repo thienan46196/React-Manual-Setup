@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  overflow: hidden;
+  background-color: lightpink;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App > span {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  color: #61dafb;
+  color: whitesmoke;
+
+  font-size: 70px;
+  font-weight: 900;
+
+  text-align: center;
+}
