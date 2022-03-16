@@ -1,29 +1,35 @@
+import { MenuItem, TextField } from '@mui/material';
+
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export const Select = (props) => {
-  const { options, masterLabel } = props;
-  console.log(options);
+export const SimpleSelect = (props) => {
+  const { options, masterLabel, handleChange } = props;
   return (
-    <div>
-      <label>{masterLabel}</label>
-      <select>
-        {options.map((opt, index) => (
-          <option key={index} value={opt.value}>
-            {opt.label}
-          </option>
-        ))}
-      </select>
-    </div>
+    <TextField
+      select
+      variant="outlined"
+      label={masterLabel}
+      sx={{ minWidth: 200 }}
+      defaultValue={options[0].value}
+      onChange={(e) => handleChange(e)}>
+      {options.map((opt, index) => (
+        <MenuItem key={index} value={opt.value} variant="outlined">
+          {opt.label}
+        </MenuItem>
+      ))}
+    </TextField>
   );
 };
 
-Select.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.object),
-  masterLabel: PropTypes.string
+SimpleSelect.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.object).isRequired,
+  masterLabel: PropTypes.string,
+  handleChange: PropTypes.func.isRequired
 };
 
-Select.defaultProps = {
+SimpleSelect.defaultProps = {
   options: [],
-  masterLabel: 'NoName'
+  masterLabel: '',
+  handleChange: () => {}
 };
