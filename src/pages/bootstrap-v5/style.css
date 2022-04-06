@@ -8,3 +8,619 @@
 .height {
   height: 400px;
 }
+
+/*===========DMX==========*/
+/* .addControlstation-icon {
+  background-image: url(../../Assets/addControlStation-btn.svg);
+  mask: url(../../Assets/addControlStation-btn.svg);
+  -webkit-mask: url(../../Assets/addControlStation-btn.svg);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  border: none;
+} */
+.btn--icon.add-interface {
+  color: #8cc11f;
+}
+.delete-interface:disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+.interface-tab.ch-treeview-LeftSide-outer {
+  border: #ccc solid 1px !important;
+  height: auto;
+  background-color: #fff;
+  min-height: 593px;
+  display: inline;
+  width: 28%;
+  margin-top: 15px;
+  height: 90vh;
+  overflow: auto;
+}
+
+.interface-tab.ch-treeview-RightSide-outer {
+  border: #ccc solid 1px !important;
+  height: auto;
+  background-color: #fff;
+  min-height: 593px;
+  width: 70% !important;
+  display: inline;
+  margin-left: 12px !important;
+  margin-bottom: 50px !important;
+}
+
+.ch_deleteInterfaces-btn {
+  color: red;
+  font-size: 21px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none !important;
+  padding: 0px 6px !important;
+}
+.icon {
+  margin-right: 5px;
+}
+
+/* #chc-interfaces-roomlist-ltv .icon.CS {
+  font-weight: lighter !important;
+  display: inline-block;
+  background-image: url(../../Assets/CS-treeview-icon-B.svg) !important;
+  mask: url(../../Assets/CS-treeview-icon-B.svg);
+  -webkit-mask: url(../../Assets/CS-treeview-icon-B.svg);
+  background-position: center center;
+  background-repeat: repeat-y;
+  width: 15px;
+  height: 15px;
+} */
+/* #chc-interfaces-roomlist-ltv .icon.CS:hover{
+  font-weight: lighter !important;   
+  display: inline-block;
+  background-image: url(../../Assets/CS-treeview-icon-W.svg) !important;
+  mask: url(../../Assets/CS-treeview-icon-W.svg);
+  -webkit-mask: url(../../Assets/CS-treeview-icon-W.svg);
+  background-position: center center;
+  background-repeat: repeat-y;
+  width: 15px;
+  height: 15px;
+} */
+
+/* #chc-interfaces-roomlist-ltv .k-treeview .k-in:hover .icon.CS {
+  font-weight: lighter !important;
+  display: inline-block;
+  background-image: url(../../Assets/CS-treeview-icon-W.svg) !important;
+  mask: url(../../Assets/CS-treeview-icon-W.svg);
+  -webkit-mask: url(../../Assets/CS-treeview-icon-W.svg);
+  background-position: center center;
+  background-repeat: repeat-y;
+  width: 15px;
+  height: 15px;
+} */
+
+/* #chc-interfaces-roomlist-ltv .k-state-selected .icon.CS {
+  font-weight: lighter !important;
+  display: inline-block;
+  background-image: url(../../Assets/CS-treeview-icon-W.svg) !important;
+  mask: url(../../Assets/CS-treeview-icon-W.svg);
+  -webkit-mask: url(../../Assets/CS-treeview-icon-B.svg);
+  background-position: center center;
+  background-repeat: repeat-y;
+  width: 15px;
+  height: 15px;
+} */
+
+/* #chc-interfaces-roomlist-ltv .icon.Keypad {
+  font-weight: lighter !important;
+  display: inline-block;
+  background-image: url(../../Assets/Keypad-treeview-icon-B.svg) !important;
+  mask: url(../../Assets/Keypad-treeview-icon-B.svg);
+  -webkit-mask: url(../../Assets/Keypad-treeview-icon-B.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 13px;
+} */
+
+/* #chc-interfaces-roomlist-ltv .k-treeview .k-in:hover .icon.Keypad {
+  font-weight: lighter !important;
+  display: inline-block;
+  background-image: url(../../Assets/Keypad-treeview-icon-W.svg) !important;
+  mask: url(../../Assets/Keypad-treeview-icon-W.svg);
+  -webkit-mask: url(../../Assets/Keypad-treeview-icon-W.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 13px;
+} */
+
+/* #chc-interfaces-roomlist-ltv .k-state-selected .icon.Keypad {
+  font-weight: lighter !important;
+  display: inline-block;
+  background-image: url(../../Assets/Keypad-treeview-icon-W.svg) !important;
+  mask: url(../../Assets/Keypad-treeview-icon-W.svg);
+  -webkit-mask: url(../../Assets/Keypad-treeview-icon-W.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 13px;
+} */
+
+/* 
+.icon.CS {
+  background-image: url(../../Assets/CS-treeview-icon-B.svg) !important;
+  background-position: center center;
+  background-repeat: repeat-y;
+  width: 12px;
+  height: 12px;
+} */
+
+/* .icon.Keypad {
+  background-image: url(../../Assets/keypad.png) !important;
+  background-position: center center;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+} */
+
+.br-gw {
+  height: 3.5px;
+  border-top: 1px dashed #ccc;
+}
+.icon-cs {
+  color: #fdb125;
+}
+.text-cs-wn {
+  font-size: 12px;
+}
+
+.ch-content-legend {
+  margin-top: 0;
+}
+
+.device-mb0.mb-3 {
+  margin-bottom: 4px !important;
+}
+
+.device-des {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  color: rgba(51, 51, 51, 0.925);
+}
+
+.k-list-optionlabel.k-state-selected {
+  font-size: 11px !important;
+  font-weight: lighter !important;
+}
+
+.k-list-optionlabel {
+  font-size: 11px !important;
+  font-weight: lighter !important;
+}
+
+.itf-tab-btn {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.k-pager-sizes .k-widget.k-dropdown {
+  min-width: 70px !important;
+}
+
+.k-pager-numbers .k-link.k-state-selected {
+  color: white !important;
+  border-radius: 50%;
+}
+
+.k-state-selected {
+  background-color: #0099d8 !important;
+}
+
+.k-pager-numbers-wrap .k-pager-numbers.k-reset a {
+  color: white !important;
+}
+
+.k-pager-numbers-wrap .k-pager-numbers.k-reset a:hover {
+  background-color: #0099d8 !important;
+  border-radius: 50%;
+}
+
+.itf-tab-btn:hover {
+  background-color: #0099d8 !important;
+}
+
+.WebComponentsIcons {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.WebComponentsIcons span.k-icon {
+  font-size: 11px;
+  list-style: none !important;
+}
+
+.interface-device-table span.k-icon.k-i-more-vertical::before {
+  content: '\e129' !important;
+  color: #ddd !important;
+}
+
+.interface-device-table span.k-icon.k-i-more-vertical:hover {
+  color: white !important;
+}
+
+.mycres-engraverDesign-iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+  background-color: #fff;
+  min-height: calc(100vh - 85px);
+  max-height: calc(100vh - 85px);
+}
+
+@media only screen and (min-width: 1824px) {
+  .mycres-engraverDesign-iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    background-color: #fff;
+    min-height: calc(100vh - 178px);
+    max-height: calc(100vh - 178px);
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  .mycres-engraverDesign-iframe {
+    height: 100vh;
+    min-height: calc(100vh - 390px) !important;
+    max-height: calc(100vh - 390px) !important;
+    margin-top: 12px !important;
+  }
+}
+
+.chc-interfaces-treeview-leftSide-wrapper {
+  border: 1px solid #ccc;
+  padding: 10px 0px 5px 5px;
+  overflow-y: auto;
+  border-radius: 0px !important;
+  height: 100vh;
+  min-height: calc(100vh - 75px);
+  max-height: calc(100vh - 75px);
+  margin-right: 5px;
+  margin-top: -6px;
+}
+
+@media only screen and (min-width: 1824px) {
+  .chc-interfaces-treeview-leftSide-wrapper {
+    border: 1px solid #ccc;
+    padding: 10px 0px 5px 5px;
+    overflow-y: auto;
+    border-radius: 0px !important;
+    height: 100vh;
+    min-height: calc(100vh - 75px);
+    max-height: calc(100vh - 75px);
+    margin-right: 5px;
+    margin-top: -6px;
+  }
+}
+
+.chc-interfaces-addDelete-btn-wrapper {
+  display: inline-block;
+  text-align: right;
+}
+
+.chc-interfaces-leftSide-View {
+  border: none !important;
+  height: auto;
+  background-color: #fff;
+  padding: 0px !important;
+  width: 27%;
+  z-index: 1;
+}
+.chc-interfaces-rightSide-View {
+  border: none !important;
+  height: auto;
+  background-color: #fff;
+  width: 73%;
+}
+
+#chc-interface-rightSide-view .nav-tabs {
+  background-color: #363b40 !important;
+  background-image: none !important;
+}
+
+#chc-interface-rightSide-view .nav-tabs > li > button {
+  color: #000;
+  cursor: default;
+  background-color: #fff;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-left: 5px;
+}
+
+#chc-interface-rightSide-view .nav > li > button {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* #chc-interface-rightSide-view .nav > li > button:hover {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+} */
+
+#chc-interface-rightSide-view .nav > li > button {
+  position: relative;
+  display: block;
+  margin-top: 2px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ffffff;
+  background-color: #363b40;
+}
+#chc-interface-rightSide-view .nav > li > button:hover {
+  position: relative;
+  display: block;
+  margin-top: 2px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ffffff;
+  background-color: #0099d8;
+}
+#chc-interface-rightSide-view .nav > li > button.active {
+  position: relative;
+  display: block;
+  margin-top: 2px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#chc-interface-rightSide-view .chc-interface-Settings-btnText {
+  font-size: 11px;
+  text-decoration: none !important;
+  line-height: 20px !important;
+}
+
+.chc-interface-tabBtn-icon {
+  margin-right: 4px;
+}
+
+.chc-interface-tabBtn-txt {
+  margin-left: 4px;
+}
+
+.chc-interface-designSettingsTab-Content {
+  height: 100vh;
+  min-height: calc(100vh - 74px);
+  max-height: calc(100vh - 74px);
+  border-left: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  width: 100%;
+  /* padding: 10px 5px 0px 5px; */
+  padding: 0px 5px 0px 5px;
+  overflow: auto;
+}
+
+.chc-interface-rightSideControl-ddl > .k-dropdown .k-dropdown-wrap > .k-input {
+  padding: 4px 0px !important;
+  font-size: 11px !important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: lighter;
+}
+
+.chc-interface-engravingDevice-description-txt {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 8.5px;
+  color: #626262;
+}
+
+.chc-interfaceUpdate-engravingDevice-description-txt {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 8.5px;
+  color: #626262;
+}
+
+#chc-interfaces-addinterface-modal-content .form-label {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#chc-interface-rightSide-view .nav-tabs .nav-link {
+  margin-bottom: 0px;
+  height: 37px !important;
+}
+
+#chc-interface-rightSide-view .nav-tabs .nav-link:hover {
+  margin-bottom: 0px;
+  height: 37px !important;
+}
+
+#mycres-engraver-serialNumber-grid .k-grid-content {
+  overflow: overlay;
+  height: 100%;
+  min-height: 34px;
+  max-height: 355px !important;
+}
+
+.interface-device-table .k-grid-content {
+  height: 100%;
+  max-height: 275px !important;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+.interface-device-table .k-grid-header {
+  color: #ffffff;
+  background-color: #363940;
+}
+
+.interface-device-table.k-grid th,
+.interface-device-table.k-grid td {
+  font-size: 10px;
+}
+
+.interface-device-table.k-i-more-vertical {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.interface-device-table.k-grid td {
+  cursor: pointer !important;
+  padding: 3px 6px;
+  height: 30px;
+}
+
+.chc-interfacedevice-table-title {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+#chc-interfaces-addcontrolstation-name-txt {
+  font-size: 11px !important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: lighter;
+}
+
+.chc-interfaces-differentColor-warning-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.chc-interfaces-differentColor-warning-icon {
+  color: #fdb125;
+  font-size: 16px;
+  margin: 1px 10px 1px 1px;
+}
+
+.chc-interfaces-differentColor-warning-txt {
+  font-weight: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+.chc-interfaces-prodinfo-link-txt {
+  font-size: 12px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #00b1ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.chc-interfaces-prodinfo-link-icon {
+  font-size: 15px;
+  color: #00b1ff;
+}
+
+#chc-interface-rightSide-view li.nav-item button:disabled {
+  color: #8d8b8b !important;
+  background-color: #ffffff1c !important;
+  border-color: #00000026;
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+.chc-interface-customDivider-W {
+  width: 97% !important;
+}
+
+.mycres-engraver-settings-tab {
+  margin-top: 10px;
+}
+
+#engraverSettings-form > div.mb-3.chc-custom-label.row {
+  margin-bottom: 0.8rem !important;
+}
+
+.chc-interface-interfacedevice-table .k-grid-norecords td {
+  padding: 20px;
+}
+
+.chc-interface-interfacedevice-table .k-grid-norecords td {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.chc-interface-moreThan50Devices {
+  font-weight: bold;
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.chc-interface-moreThan50Devices1 {
+  font-weight: bold;
+  color: #424242;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+
+.chc-interfaces-addinterface-dialog-wrapper
+  .wrap-dialog
+  > .k-dialog-wrapper.base-dialog
+  > .k-widget.k-window.k-dialog
+  > .k-window-content.k-dialog-content {
+  min-height: fit-content;
+  max-height: 320px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* interface treeview node text truncate with ellipse */
+
+/* .chc-interface-treeview-keypadTypesName {
+  cursor: pointer !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: auto;
+  max-width: 85%;
+} */
+
+.chc-interface-treeview-keypadTypesName {
+  cursor: pointer !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: auto;
+  max-width: 305px;
+}
+
+/* .chc-interface-roomlist-ltv .k-treeview .k-in.k-state-selected {  
+  margin-left: -2px;
+  width: 100%;
+}
+.chc-interface-roomlist-ltv .k-treeview .k-in {  
+  margin-left: -2px;
+  width: 100%;
+}  */
+
+.chc-interfaces-roomlist-ltv .k-treeview .k-in.k-state-selected {
+  margin-left: -2px;
+  width: auto;
+  max-width: 305px;
+}
+.chc-interfaces-roomlist-ltv .k-treeview .k-in {
+  margin-left: -2px;
+  width: auto;
+  max-width: 305px;
+}
+
+/* interface treeview node text truncate with ellipse */

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: path.join(__dirname, 'src', 'index.js'),
+  entry: path.join(__dirname, 'src', 'index.tsx'),
   devServer: {
     hot: true,
     open: true,
@@ -12,15 +12,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.?js|.?jsx$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
+            presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript']
           }
         }
-      }, // config loader for both JS and JSX
+      }, // config loader for JS,JSX
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: ['ts-loader']
+      },
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader']
@@ -42,7 +47,7 @@ module.exports = {
       Utils: path.resolve(__dirname, 'src/utils'),
       BestPractices: path.resolve(__dirname, 'src/best-practices')
     },
-    extensions: ['.js', '.jsx', '.css']
+    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
   },
   plugins: [
     new HtmlWebpackPlugin({

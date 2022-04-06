@@ -1,0 +1,54 @@
+.device-row {
+  display: flex;
+  width: 100%;
+  height: 120px;
+}
+
+.odd {
+  flex-direction: row-reverse;
+}
+
+.even {
+  flex-direction: row;
+}
+
+.device {
+  width: 220px;
+}
+
+.first-block {
+  width: 300px;
+  margin-left: 40%;
+}
+
+.block {
+  display: block;
+  border: 2px black solid;
+  height: 40px;
+  line-height: 40px;
+
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.line {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  border-top: 3px black solid;
+  height: 120px;
+  width: 350px;
+  margin-top: -15px;
+}
+
+.test-line {
+  display: block;
+  border-top: 2px black solid;
+  border-right: 2px black solid;
+}
+
+.no-padding {
+  padding: 0;
+  margin: 0;
+}

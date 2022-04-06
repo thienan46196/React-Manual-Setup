@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    // to use normal import ABC from "xyz" instead of import ABC = require("XYZ")
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "./build/",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "isolatedModules": true,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "es5",
+
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    //sync paths with webpack config
+    "paths": {
+      "Pages/*": ["src/pages/*"],
+      "Components": ["src/components"],
+      "Utils": ["src/utils"],
+      "BestPractices": ["src/best-practices"]
+    }
+  },
+  // to satisfy typescript compiler
+  "include": ["src/index.tsx"]
+}
